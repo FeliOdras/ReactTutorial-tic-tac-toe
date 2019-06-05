@@ -16,8 +16,24 @@ body {
     font-family: Handlee, cursive;
   }
 
+  .player {
+    padding-bottom:20px;
+    font-size: 23px;
+    font-weight:bold;
+
+    &.playerX {
+      color:#D05A74;
+      text-shadow: 0 0 3px #fff;
+    }
+    &.playerO {
+      color:#fff;
+      text-shadow: 0 0 3px #ccc;
+    }
+  }
+
   .game {
       max-width:1000px;
+      min-width:215px;
       margin:auto;
       text-align: center;
   }
