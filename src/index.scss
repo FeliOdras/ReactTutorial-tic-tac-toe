@@ -16,6 +16,12 @@ body {
   .game {
       max-width:1000px;
       margin:auto;
+      text-align: center;
+  }
+
+  .game-board {
+    margin:auto;
+    display: inline-block;
   }
   
   ol, ul {
