@@ -66,7 +66,6 @@ export default class Game extends React.Component {
         return (
             <div className="App">
                 <Header />
-
                 <div className="game">
 
                     <div className="game-board">
