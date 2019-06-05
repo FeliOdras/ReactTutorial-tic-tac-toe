@@ -72,7 +72,8 @@ export default class Game extends React.Component {
             <div className="App">
                 <Header />
                 <div className="game">
-
+                    <div>
+                        <span className={this.isNext === true ? "playerO" : "playerX"}>{status}</span></div>
                     <div className="game-board">
                         <Board
                             squares={current.squares}
@@ -80,7 +81,6 @@ export default class Game extends React.Component {
                         />
                     </div>
                     <div className="game-info">
-                        <div>{status}</div>
                         <ol>{moves}</ol>
                     </div>
                 </div>
