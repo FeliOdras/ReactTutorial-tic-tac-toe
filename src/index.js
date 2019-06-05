@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import { timingSafeEqual } from 'crypto';
+import './index.scss';
 
 function Square(props) {
     return (
@@ -84,13 +83,14 @@ class Game extends React.Component {
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = calculateWinner(current.squares);
+
         const moves = history.map((step, move) => {
             const decs = move ?
                 'Go to move #' + move :
                 'Go to game start';
             return (
                 <li key={move} >
-                    <button onClick={() => this.jumpTo(move)}>Go to move #{move}</button>
+                    <button onClick={() => this.jumpTo(move)}>{decs}</button>
                 </li>
             )
         })
