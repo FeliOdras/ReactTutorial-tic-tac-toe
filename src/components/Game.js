@@ -72,8 +72,7 @@ export default class Game extends React.Component {
             <div className="App">
                 <Header />
                 <div className="game">
-                    <div>
-                        <span className={this.isNext === true ? "playerO" : "playerX"}>{status}</span></div>
+                    <div className={this.isNext === true ? "playerO player" : "playerX player"}>{status}</div>
                     <div className="game-board">
                         <Board
                             squares={current.squares}
