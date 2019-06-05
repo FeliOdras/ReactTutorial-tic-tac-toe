@@ -15,6 +15,10 @@ export default class Game extends React.Component {
         };
     }
 
+    componentDidMount() {
+        document.title = "Tic Tac Toe | React App"
+    }
+
     handleClick(i) {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1];
