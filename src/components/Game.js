@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Board from './Board';
+import Footer from './Footer';
 
 export default class Game extends React.Component {
     constructor(props) {
@@ -79,6 +80,7 @@ export default class Game extends React.Component {
                         <ol>{moves}</ol>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }
