@@ -1,9 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Handlee|Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Handlee|Parisienne");
 
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 0;
   padding: 0;
+
+  a {
+    color: #791329;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid #791329;
+    }
+  }
 }
 
 .App {
@@ -90,7 +99,32 @@ ul {
 }
 
 .game-info {
-  margin-left: 20px;
+  ol {
+    padding: 0;
+    margin: 10px 0;
+  }
+  li {
+    display: inline-block;
+    margin: 5px 3px;
+  }
+}
+
+button {
+  color: #fff;
+  background-color: #791329;
+  border: none;
+  font-family: Handlee, cursive;
+  font-size: 16px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #333;
+
+  &:hover {
+    padding: 1px 4px;
+    margin: 0 2px;
+    box-shadow: 0 0 8px #000;
+    background-color: #520919;
+  }
 }
 
 footer {
