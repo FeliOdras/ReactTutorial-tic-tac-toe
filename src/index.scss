@@ -12,15 +12,28 @@ body {
   background-position: 50%;
   background-size: cover;
   height: 100vh;
-  padding: 20px;
   font-family: Handlee, cursive;
+}
+
+header {
+  background-color: rgba(121, 19, 41, 0.7);
+  padding: 10px 20px;
+  margin-bottom: 30px;
+
+  h1 {
+    color: #fff;
+    text-shadow: 0 0 10px #791329;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .player {
   padding-bottom: 20px;
   font-size: 23px;
   font-weight: bold;
-  color: #d05a74;
+  color: #791329;
   text-shadow: 0 0 3px #fff;
 }
 
@@ -64,6 +77,8 @@ ul {
   padding: 0;
   text-align: center;
   width: 70px;
+  font-family: Handlee, cursive;
+  color: #791329;
 }
 
 .square:focus {
@@ -76,4 +91,26 @@ ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid #791329;
+
+  .hotpink {
+    background-color: hotpink;
+    font-family: Parisienne, cursive;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+  }
 }
