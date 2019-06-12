@@ -88,6 +88,10 @@ ul {
   width: 70px;
   font-family: Handlee, cursive;
   color: #791329;
+
+  &:hover {
+    background-color: #fff;
+  }
 }
 
 .square:focus {
@@ -106,24 +110,24 @@ ul {
   li {
     display: inline-block;
     margin: 5px 3px;
-  }
-}
 
-button {
-  color: #fff;
-  background-color: #791329;
-  border: none;
-  font-family: Handlee, cursive;
-  font-size: 16px;
-  padding: 3px 6px;
-  border-radius: 4px;
-  box-shadow: 0 0 5px #333;
+    button {
+      color: #fff;
+      background-color: #791329;
+      border: none;
+      font-family: Handlee, cursive;
+      font-size: 16px;
+      padding: 3px 6px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #333;
 
-  &:hover {
-    padding: 1px 4px;
-    margin: 0 2px;
-    box-shadow: 0 0 8px #000;
-    background-color: #520919;
+      &:hover {
+        padding: 1px 4px;
+        margin: 0 2px;
+        box-shadow: 0 0 8px #000;
+        background-color: #520919;
+      }
+    }
   }
 }
 
