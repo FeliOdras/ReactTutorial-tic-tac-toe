@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# React Tic Tac Toe
+
+_React Game: Tic Tac Toe - following [React Tutorial](https://reactjs.org/tutorial/tutorial.html)_
+
+![Preview Image](./TicTacToe.png)
+
+---
+#### **[Visit Poject Site &raquo;](https://playground.odras.de/TicTacToe/)**
+---
+
+## Features
+- Tic Tac Toe Game for two players
+- 
+
+## Technologies
+- JavaScript
+- React JS
+- HTML/CSS/SCSS
+- Local Storage
+
+---
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,4 +88,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# ReactTutorial-tic-tac-toe
