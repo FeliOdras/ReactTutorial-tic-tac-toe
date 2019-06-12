@@ -1,56 +1,150 @@
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
+@import url("https://fonts.googleapis.com/css?family=Handlee|Parisienne");
 
-  .game {
-      max-width:1000px;
-      margin:auto;
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: #791329;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid #791329;
+    }
   }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
+}
+
+.App {
+  background-image: url(./static/sakura-background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  height: 100vh;
+  font-family: Handlee, cursive;
+}
+
+header {
+  background-color: rgba(121, 19, 41, 0.7);
+  padding: 10px 20px;
+  margin-bottom: 30px;
+
+  h1 {
+    color: #fff;
+    text-shadow: 0 0 10px #791329;
     font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
+    text-transform: uppercase;
     text-align: center;
-    width: 34px;
   }
-  
-  .square:focus {
-    outline: none;
+}
+
+.player {
+  padding-bottom: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #791329;
+  text-shadow: 0 0 3px #fff;
+}
+
+.game {
+  max-width: 1000px;
+  min-width: 215px;
+  margin: auto;
+  text-align: center;
+}
+
+.game-board {
+  margin: auto;
+  display: inline-block;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #999;
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 70px;
+  height: 70px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 70px;
+  font-family: Handlee, cursive;
+  color: #791329;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-info {
+  ol {
+    padding: 0;
+    margin: 10px 0;
   }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
+  li {
+    display: inline-block;
+    margin: 5px 3px;
   }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
+}
+
+button {
+  color: #fff;
+  background-color: #791329;
+  border: none;
+  font-family: Handlee, cursive;
+  font-size: 16px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #333;
+
+  &:hover {
+    padding: 1px 4px;
+    margin: 0 2px;
+    box-shadow: 0 0 8px #000;
+    background-color: #520919;
   }
-  
-  .game-info {
-    margin-left: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid #791329;
+
+  .hotpink {
+    background-color: hotpink;
+    font-family: Parisienne, cursive;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
   }
-  
+}
